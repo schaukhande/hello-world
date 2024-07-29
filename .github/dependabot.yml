@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/" # Root directory where requirements.txt or other dependency files are located
+    schedule:
+      interval: "weekly" # Check for updates weekly
+    open-pull-requests-limit: 5 # Limit the number of open PRs at a time
+    allow:
+      - dependency-type: "all" # Include both direct and transitive dependencies
